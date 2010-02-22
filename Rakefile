@@ -15,6 +15,7 @@ namespace(:test) do
     # test files must be run separately, or else focus kicks in, and stats resets nanotest
     paths = %w(
       test/test_contexts.rb
+      test/test_error_handling.rb
       test/test_focus.rb
       test/test_spec.rb
       test/test_stats.rb

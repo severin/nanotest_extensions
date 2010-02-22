@@ -1,0 +1,19 @@
+=== Summary
+
+Catches errors raised in assert blocks and reports them to you.
+
+=== Examples
+
+  require 'nanotest'
+  require 'nanotest/error_handling'
+  include  Nanotest
+
+  assert { true         }
+  assert { raise 'hell' } # line 6 in file test_stuff.rb
+  assert { true         }
+
+  outputs:
+  
+  .E.
+  (test_stuff.rb:6) assertion raised error: RuntimeError: hell
+  
